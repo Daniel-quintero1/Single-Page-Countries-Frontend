@@ -1,0 +1,55 @@
+  .card {
+    width: 45%;
+    display: flex;
+    flex-direction: calc();
+    margin: 1%;
+    border-radius: 20%;
+    padding: 1%;
+    background-color: #9a8e71dc;
+    box-shadow: 0px 5px 20px 3px rgb(150, 184, 178);
+    background-image: url('https://media.istockphoto.com/id/852004228/es/foto/mapa-topogr%C3%A1fico-de-render-3d-de-hait%C3%AD.jpg?s=612x612&w=0&k=20&c=QSA6lCZ_7XKkXgc8z35XK9RkCZe-FBnsepdn_o9E7dY=');
+    background-size: cover;
+    background-attachment:fixed;
+    /* background-position: center */
+  }
+  
+  .card:hover {
+    transform:translateY(-2px);
+  }
+  
+  .imgContainer {
+    width: 40%;
+    margin-right: 5%;
+    
+  }
+  
+  .img {
+    width: 90%;
+    height: auto;
+  
+  }
+  
+  .textContainer {
+    text-align: left;
+    color: rgb(0, 0, 0);
+  }
+  
+  .link {
+    text-decoration:underline;
+    color: black
+    
+  }
+  
+  .link:hover {
+    text-decoration:dashed;
+  }
+  .country {
+    font-size: 30px;
+    margin-bottom:-1em;
+  }
+  
+  .continent {
+    font-size: 22px;
+    margin-top: 0;
+    color: #0f0d0c;
+  }

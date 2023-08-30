@@ -1,0 +1,65 @@
+.homeContain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: 1px solid black;
+    align-items: center;
+    background-image: url('../../Imagenes/img2.jpg');
+    background-size: cover;
+    background-position: center
+  } 
+  .fondo {
+    background-image: url('https://media.istockphoto.com/id/506392794/es/foto/marcador-rojo-de-panam%C3%A1.jpg?s=612x612&w=0&k=20&c=rdtN-JvI7GTfoJkfNENMzuqwhZF0M6326hOuM_6CQJk=');
+    height: 205vh;
+    background-size: cover;
+    background-attachment:fixed;
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 220vh;
+    background-color: #211c13;
+    padding: 0;
+    align-items: center;
+  }
+  
+.countryContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1712;
+    margin-bottom: 5vh;
+    padding: 5vh 0;
+  }
+  
+  .btnContainer {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+  }
+
+  
+  .btn {
+    height: 1%;
+    width: 100%;
+    background-color: #f3f1ed;
+    border: 1px solid #776c62;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  
+  .btn:first-of-type {
+    border-right: none;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background-color: #776c62;
+    color: #161513;
+    border: 0.5px solid #f3f1ed;
+  }

@@ -1,0 +1,62 @@
+  .container {
+    height: 96vh;
+    background-color: #f3f1ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Imagenes/img2.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+     background-position: center;
+  }
+  
+  .container::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dad4cc83;
+    z-index: 0;
+    border-bottom: 1px solid #776c62;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vh 0.5vw;
+    background-color: #f3f1edb7;
+    box-shadow: -1px 2px 104px 12px rgba(0, 0, 0, 0.68);
+  }
+  
+  .infoContainer {
+    margin-top: 2vh;
+    height: 50%;
+  }
+  
+  .img {
+    width: 35vw;
+    height: 25vh;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 50px;
+    text-decoration: underline;
+  }
+  
+  .subtitle {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .activities {
+    margin-top: 3vh;
+    margin-bottom: 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }

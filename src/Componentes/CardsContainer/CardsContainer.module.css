@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+  }
+
+    .btn {
+    width: 08%;
+    color: #f3f1ed;
+    background-color: #b8b1ab;
+    border: 1px solid b8b1ab;
+    line-height: 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  .btn:hover,
+  .btnBack:hover {
+    cursor: pointer;
+    background-color: #776c62;
+    color: #f3f1ed;
+    border: 1px solid #776c62;
+  }

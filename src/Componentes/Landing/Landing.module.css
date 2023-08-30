@@ -1,0 +1,63 @@
+.Container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://cdn.pixabay.com/photo/2017/09/04/16/58/passport-2714675_1280.jpg');
+  background-size: cover;
+  background-position: center
+}
+.textContainer {
+  padding: 2vh;
+  width: 30vw;
+  height: 50vh;
+  background-color: #97928bc2;
+  box-shadow: -1px 2px 104px 12px rgba(9, 0, 0, 0.68);
+  -webkit-box-shadow: 10px 2px 90px 12px rgba(1, 50, 90, 0.68);
+  -moz-box-shadow: -1px 2px 104px 12px rgba(180, 0, 0, 0.68);
+  border-radius: 150px;
+}
+.title {
+  font-size: 2.4em;
+  padding-top: 8%;
+  padding-bottom: 12%;
+  border-bottom: 1px solid #49413a;
+}
+.text {
+  font-size: 1.3em;
+  color: #212157eb;
+}
+
+.btn {
+  width: 20%;
+  padding: 1%;
+  border: 0.5px solid;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+  font-size: large;
+  border-radius: 20px;
+  color: darkslategrey;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(140, 91, 91);
+  font-size: large;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+.footer {
+  font-size:medium;
+  font-weight:bolder;
+}
+.gifImage { 
+  width: 100px; 
+  border: 2px solid #443d3d;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  top: px;
+  cursor:cell;
+}

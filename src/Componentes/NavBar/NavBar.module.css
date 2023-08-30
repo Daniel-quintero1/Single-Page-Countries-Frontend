@@ -1,0 +1,27 @@
+.navContain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: 3px solid black;
+    align-items: center;
+    background-image: url('../../Imagenes/img1.jpg');
+    background-size: cover;
+  }
+  .navContainer::before {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 120%;
+    height: 100%;
+    background-color: #dad4cc83;
+    z-index: 0;
+    border-bottom: 1px solid #776c62;
+    pointer-events: none;
+  }
+  .title {
+    text-decoration:underline;
+    color: rgb(11, 10, 10);
+    margin: 0;
+    font-size: 20px;
+  }

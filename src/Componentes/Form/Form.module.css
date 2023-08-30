@@ -1,0 +1,86 @@
+
+  .container {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://media.istockphoto.com/id/157393082/es/foto/mapa-de-colombia-venezuela.jpg?s=612x612&w=0&k=20&c=-NacOOgzKwoEcifFcCS_jDOECQSaPiKhOWpOp6EB8Y8=');
+    background-size: cover;
+    background-attachment:fixed;
+     background-position: center;
+  }
+  
+  .container::before {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 120%;
+    height: 100%;
+    background-color: #dad4cc83;
+    z-index: 0;
+    border-bottom: 1px solid #776c62;
+    pointer-events: none;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: #f3f1edb7;
+    border-radius: 10%;
+    box-shadow: -1px 2px 104px 12px rgba(0, 0, 0, 0.68);
+  }
+  
+  .titulo {
+    margin-top: 0;
+    margin-bottom: 4vh;
+  }
+
+  .formSeleccion {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    margin: 20px 0;
+    text-align:right;
+  }
+  
+  .formSeleccion:last-of-type {
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    width: 90%;
+    height: 1.5rem;
+    margin-right: 1.5vw;
+    margin-left: 1vw;
+    background-color: #ffffff;
+    border: 1px solid #776c62;
+  }
+  
+  .btnBack {
+    width: 50%;
+    background-color: #f3f1ed;
+    border: 1px solid #776c62;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    width: 25%;
+    color: #f3f1ed;
+    background-color: #b8b1ab;
+    border: 1px solid b8b1ab;
+    line-height: 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  .btn:hover,
+  .btnBack:hover {
+    cursor: pointer;
+    background-color: #776c62;
+    color: #f3f1ed;
+    border: 1px solid #776c62;
+  }
+  
