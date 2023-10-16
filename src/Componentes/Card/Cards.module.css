@@ -1,7 +1,7 @@
   .card {
     width: 45%;
     display: flex;
-    flex-direction:calc();
+    flex-direction:row;
     margin: 1%;
     border-radius: 20%;
     padding: 1%;
