@@ -12,6 +12,7 @@ import {
   SET_CURRENT_PAGE,
   ORDER_BY_POPULATION,
   FILTER_BY_ACTIVITIES,
+  INTERSECT,
 } from "./types";
 
 export const getCountries = () => {
@@ -72,6 +73,15 @@ export function filterByContinents(continents) {
     payload: continents,
   };
 }
+export const intersect = () => async (dispatch) => {
+  try {
+    return dispatch({
+      type: INTERSECT,
+    });
+  } catch (error) {
+    return error;
+  }
+};
 export function filterByActivities(activities) {
   return {
     type: FILTER_BY_ACTIVITIES,

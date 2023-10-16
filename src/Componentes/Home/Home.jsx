@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CardsContainer from "../CardsContainer/CardsContainer";
+import CardsContainer from "../../Componentes/CardsContainer/CardsContainer";
 import { useDispatch, useSelector } from "react-redux";
 import style from "../Home/Home.module.css";
 import {
@@ -8,6 +8,7 @@ import {
   filterByContinents,
   getActivities,
   getCountries,
+  intersect,
   ordenByPopulation,
   orderByName,
   setCurrentPage,
@@ -16,6 +17,13 @@ import {
 const Home = () => {
   const dispatch = useDispatch();
   const activities = useSelector((state) => state.activities);
+  // Handler para los cambios en los filtros
+  const handleContinentFilter = (e) => {
+    const continent = e.target.value;
+    dispatch(filterByContinents(continent));
+    dispatch(intersect())
+    dispatch(setCurrentPage(1));
+  };
 
   useEffect(() => {
     dispatch(getCountries());
@@ -28,11 +36,6 @@ const Home = () => {
     dispatch(setCurrentPage(1));
   };
 
-  const handleContinentFilter = (e) => {
-    const continent = e.target.value;
-    dispatch(filterByContinents(continent));
-    dispatch(setCurrentPage(1));
-  };
 
   const handleByActivities = (e) => {
     const value = e.target.value;
@@ -72,7 +75,7 @@ const Home = () => {
           <div className={style.btn}>
             <select
               name="filterByContinents"
-              onChange={(e) => handleContinentFilter(e)}
+              onChange={handleContinentFilter}
             >
               <option value="">Todos los continentes</option>
               <option value="Asia">Asia</option>

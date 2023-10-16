@@ -1,7 +1,7 @@
 // import axios from "axios";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import style from "./Detail.module.css"
+import style from "../Detail/Detail.module.css"
 import { useDispatch, useSelector } from "react-redux";
 import { getCountriesId } from "../../Redux/Actions";
 
